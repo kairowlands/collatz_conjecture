@@ -1,7 +1,7 @@
 // Kai Rowlands
 // Collatz Conjecture
 
-#include <iostream> // Uploads iostream library
+#include <iostream>
 
 using namespace std;
 
@@ -13,9 +13,9 @@ int main(){
         int n = MaxInteger;                                     // n is now the input for the while loop below, assigns the value of MaxInteger to n
         int steps = 0;                                          // steps = number of steps
 
-        while (n != 1){         // For n not equal to one
-            if (n % 2 == 1){    // If n is "completely" divisible by two then the result is one (e.g. 8 % 2 == 1 since 8 / 2 = 4 / 2 = 2 / 2 = 1)
-                n = 3 * n + 1;  // If n is odd then multiply by three and add one
+        while (n != 1){
+            if (n % 2 == 1){    // If n is "completely" divisible by two then the result is one
+                n = 3 * n + 1;
             }
             else{
                 n /= 2; // If n is even then divide by two, equivalent to n = n / 2
